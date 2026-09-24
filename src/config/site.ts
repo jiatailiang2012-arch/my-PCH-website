@@ -8,7 +8,7 @@ export const site = {
   memberLabel: "Phoenix Children’s Teen Council",
   independentLabel: "A personal fundraiser by Justin Liang",
   donationUrl: "https://ignitehope.phoenixchildrensfoundation.org/justin-liang",
-  canonicalUrl: "", // Set to the final https://... Vercel/custom domain before sharing.
+  canonicalUrl: "https://my-pch-website.vercel.app",
   metadata: {
     title: "Justin Liang • A little hope. A lot of heart.",
     description: "Help Justin Liang support Phoenix Children’s through the Teen Council. Read his why, share the cause, and donate on the official fundraising platform.",
