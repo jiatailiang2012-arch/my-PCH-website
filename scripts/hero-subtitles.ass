@@ -1,0 +1,22 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H20000000,-1,0,0,0,100,100,0,0,1,2,4,2,64,64,110,1
+Style: Shadow,Arial,64,&H40000000,&H40000000,&H40000000,&H40000000,-1,0,0,0,100,100,0,0,1,12,3,2,64,64,110,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:09.20,0:00:13.20,Shadow,,0,0,0,,{\blur8}Every day a child\Nis diagnosed with cancer.
+Dialogue: 0,0:00:13.20,0:00:16.80,Shadow,,0,0,0,,{\blur8}Don’t just watch and walk away.
+Dialogue: 0,0:00:16.80,0:00:20.00,Shadow,,0,0,0,,{\blur8}Join me in making a difference.
+Dialogue: 0,0:00:20.00,0:00:25.00,Shadow,,0,0,0,,{\blur8}Phoenix Children's Hospital\NTeenager Council
+Dialogue: 1,0:00:09.20,0:00:13.20,Default,,0,0,0,,Every day a child\Nis diagnosed with cancer.
+Dialogue: 1,0:00:13.20,0:00:16.80,Default,,0,0,0,,Don’t just watch and walk away.
+Dialogue: 1,0:00:16.80,0:00:20.00,Default,,0,0,0,,Join me in making a difference.
+Dialogue: 1,0:00:20.00,0:00:25.00,Default,,0,0,0,,Phoenix Children's Hospital\NTeenager Council

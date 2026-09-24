@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+!.env.example
+*.tsbuildinfo
+.sites-runtime/
+qa/
+# Existing personal media is intentionally not part of the website.
+/*.mp4
+/*.png
+
+.preview/
