@@ -113,11 +113,12 @@ export const site = {
     emailSubject: "Help Justin support Phoenix Children’s",
     copy: "Copy link", copied: "Link copied!", copyFallback: "Copy this link:",
     email: "Email", text: "Text", linkedin: "LinkedIn",
-    qrImage: "", // Replace with a real QR image encoding the final canonicalUrl.
+    qrImage: "/images/justin-fundraiser-qr.png", // Encodes https://my-pch-website.vercel.app/
     qrAlt: "QR code to Justin’s fundraising landing page",
-    qrTitle: "Take a little hope with you.",
+    qrTitle: "Scan to share",
+    qrDownload: "Save QR code",
     qrPlaceholder: "QR code\ncoming soon",
-    qrCaption: "An easy way to share, wherever you are.",
+    qrCaption: "Open this page on your phone, or save the code to share.",
     allowedSources: ["school", "family", "instagram", "healthcare"],
   },
   footer: {

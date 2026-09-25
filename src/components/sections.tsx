@@ -70,9 +70,19 @@ export function MyWhy() {
 export function Share() {
   return <section id="share" className="section compact-share" aria-labelledby="share-heading">
     <div className={`container share-layout${site.share.qrImage ? "" : " share-without-qr"}`}>
-      <div><h2 id="share-heading">{site.share.title}</h2><p className="share-description">{site.share.description}</p></div>
-      <ShareButtons/>
-      {site.share.qrImage && <div className="qr-card"><img src={site.share.qrImage} alt={site.share.qrAlt} width="144" height="144" loading="lazy"/><p>{site.share.qrCaption}</p></div>}
+      <div className="share-content">
+        <h2 id="share-heading">{site.share.title}</h2>
+        <p className="share-description">{site.share.description}</p>
+        <ShareButtons />
+      </div>
+      {site.share.qrImage && <div className="qr-card">
+        <img src={site.share.qrImage} alt={site.share.qrAlt} width="164" height="164" loading="lazy" />
+        <div className="qr-details">
+          <h3>{site.share.qrTitle}</h3>
+          <p>{site.share.qrCaption}</p>
+          <a className="text-link qr-download" href={site.share.qrImage} download="justin-fundraiser-qr.png">{site.share.qrDownload}</a>
+        </div>
+      </div>}
     </div>
   </section>;
 }

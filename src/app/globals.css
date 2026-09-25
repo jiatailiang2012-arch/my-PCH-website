@@ -413,3 +413,17 @@ h3 { font-size:21px; letter-spacing:-.6px; font-weight:600; }
   .story-copy > p { font-size:14px; }
   .compact-share .share-buttons { grid-template-columns:1fr 1fr; }
 }
+
+/* Shareable QR links to the public landing page, not the local preview. */
+.compact-share .share-layout { grid-template-columns:minmax(0,1fr) 260px; gap:32px; }
+.compact-share .share-without-qr { grid-template-columns:1fr; }
+.compact-share .share-content .share-description { margin-bottom:20px; }
+.compact-share .qr-card { display:flex; flex-direction:column; align-items:center; gap:16px; padding:24px; text-align:center; background:var(--paper); border:1px solid var(--line); }
+.compact-share .qr-card > img { width:164px; height:164px; flex-shrink:0; image-rendering:pixelated; }
+.compact-share .qr-details h3 { font-size:16px; margin:0 0 8px; letter-spacing:0; }
+.compact-share .qr-details p { font-size:13px; line-height:1.6; color:var(--muted); margin:0 0 10px; }
+.compact-share .qr-download { min-height:44px; align-items:center; font-size:14px; }
+@media (max-width:800px) {
+  .compact-share .share-layout { grid-template-columns:1fr; gap:24px; }
+  .compact-share .qr-card { width:100%; max-width:360px; justify-self:center; }
+}
