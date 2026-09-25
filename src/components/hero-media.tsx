@@ -11,9 +11,21 @@ export function HeroMedia() {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
     if (player && !reducedMotion.matches && !connection?.saveData) {
+      // Set the live media properties before requesting playback on mobile Safari.
+      player.defaultMuted = true;
+      player.muted = true;
+      player.playsInline = true;
+      // Native autoplay can start when media becomes ready, in addition to play().
+      // Enable only after checking accessibility and data-saving preferences.
+      player.autoplay = true;
       void player.play().catch(() => { /* Keep the poster and native play button if autoplay is blocked. */ });
     }
-    const handleMotionChange = () => { if (reducedMotion.matches) player?.pause(); };
+    const handleMotionChange = () => {
+      if (player && reducedMotion.matches) {
+        player.autoplay = false;
+        player.pause();
+      }
+    };
     reducedMotion.addEventListener("change", handleMotionChange);
     return () => { reducedMotion.removeEventListener("change", handleMotionChange); player?.pause(); };
   }, []);
